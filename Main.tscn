@@ -9,7 +9,6 @@ font_size = 250
 position = Vector2(400, 150)
 
 [node name="Tiles" type="Node2D" parent="."]
-position = Vector2(2.08165e-12, 2.08165e-12)
 
 [node name="Tile1" parent="Tiles" instance=ExtResource("1_vegxg")]
 
@@ -37,7 +36,10 @@ position = Vector2(151, 249)
 [node name="Tile9" parent="Tiles" instance=ExtResource("1_vegxg")]
 position = Vector2(251, 249)
 
-[node name="UI" type="Control" parent="."]
+[node name="UIWrapper" type="Node2D" parent="."]
+z_index = 10
+
+[node name="UI" type="Control" parent="UIWrapper"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -47,8 +49,7 @@ offset_bottom = 300.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="hola" type="Label" parent="UI"]
-z_index = 10
+[node name="hola" type="Label" parent="UIWrapper/UI"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5

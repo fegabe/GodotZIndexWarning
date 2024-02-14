@@ -1,0 +1,67 @@
+[gd_scene load_steps=3 format=3 uid="uid://dnhdtjl8vgoco"]
+
+[ext_resource type="PackedScene" uid="uid://bmhgu4b5qjx7k" path="res://Tile.tscn" id="1_vegxg"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_o5ypl"]
+font_size = 250
+
+[node name="250" type="Node2D"]
+position = Vector2(400, 150)
+
+[node name="Tiles" type="Node2D" parent="."]
+position = Vector2(2.08165e-12, 2.08165e-12)
+
+[node name="Tile1" parent="Tiles" instance=ExtResource("1_vegxg")]
+
+[node name="Tile2" parent="Tiles" instance=ExtResource("1_vegxg")]
+position = Vector2(151, 49)
+
+[node name="Tile3" parent="Tiles" instance=ExtResource("1_vegxg")]
+position = Vector2(251, 49)
+
+[node name="Tile4" parent="Tiles" instance=ExtResource("1_vegxg")]
+position = Vector2(51, 149)
+
+[node name="Tile5" parent="Tiles" instance=ExtResource("1_vegxg")]
+position = Vector2(151, 149)
+
+[node name="Tile6" parent="Tiles" instance=ExtResource("1_vegxg")]
+position = Vector2(251, 149)
+
+[node name="Tile7" parent="Tiles" instance=ExtResource("1_vegxg")]
+position = Vector2(51, 249)
+
+[node name="Tile8" parent="Tiles" instance=ExtResource("1_vegxg")]
+position = Vector2(151, 249)
+
+[node name="Tile9" parent="Tiles" instance=ExtResource("1_vegxg")]
+position = Vector2(251, 249)
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 300.0
+offset_bottom = 300.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="hola" type="Label" parent="UI"]
+z_index = 10
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -31.0
+offset_top = -21.0
+offset_right = 31.0
+offset_bottom = 21.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "hola"
+label_settings = SubResource("LabelSettings_o5ypl")
+horizontal_alignment = 1
+vertical_alignment = 1

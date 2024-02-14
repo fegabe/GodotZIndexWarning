@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bmhgu4b5qjx7k"]
+
+[ext_resource type="Texture2D" uid="uid://dmevstpv1s2y2" path="res://Coin.png" id="1_i3vdi"]
+
+[node name="Tile" type="Sprite2D"]
+z_index = 10
+position = Vector2(51, 49)
+texture = ExtResource("1_i3vdi")
